@@ -46,7 +46,11 @@ a:hover{
 }
 .wrapper{
     max-width: 1200px;
+<<<<<<< HEAD
     margin: auto;
+=======
+    margin: auto;
+>>>>>>> 0668ebe406ccfea998584811775c1d62c9c8fd01
     padding-inline: 15px;
 }
 
