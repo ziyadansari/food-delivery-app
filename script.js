@@ -140,3 +140,29 @@ const initApp=()=>{
 
 }
 initApp()
+
+
+
+
+const authBtn = document.querySelector(".desktop-action .btn");
+
+// Check login status
+const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+if (currentUser) {
+    authBtn.innerHTML = `
+        ${currentUser.name}
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    `;
+
+    authBtn.href = "#";
+    authBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        localStorage.removeItem("currentUser");
+
+        alert("Logged out successfully!");
+
+        window.location.reload();
+    });
+}

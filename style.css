@@ -45,19 +45,22 @@ a:hover{
     gap: 30px
 }
 .wrapper{
-    max-width: 1200px;
-<<<<<<< HEAD
+    max-width: 100%;
     margin: auto;
-=======
-    margin: auto;
->>>>>>> 0668ebe406ccfea998584811775c1d62c9c8fd01
     padding-inline: 15px;
 }
 
 
 /* HEADER STYLING */
-.navbar{
+
+.navbar {
     min-height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fcf1cc;
 }
 .logo{
     font-size: 30px;
@@ -136,6 +139,7 @@ a:hover{
 
 .image-container {
     width: 50%;
+    margin-top: 40px;
 }
 
 .image-container img {

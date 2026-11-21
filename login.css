@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lead: #212121;
+    --gold-finger: #f2bd12;
+    --eye-ball: #fffdf7;
+    --hint-yellow: #fcf1cc;
+    --pure-white: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--hint-yellow);
+    font-family: Arial, sans-serif;
+    color: var(--lead);
+}
+
+.auth-container {
+    background: var(--eye-ball);
+    width: 380px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(33, 33, 33, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--lead);
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+h1 span {
+    color: var(--gold-finger);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.tabs button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    background: var(--pure-white);
+    color: var(--lead);
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tabs button.active {
+    background: var(--gold-finger);
+    color: var(--lead);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background: var(--pure-white);
+    color: var(--lead);
+}
+
+input:focus {
+    border-color: var(--gold-finger);
+    box-shadow: 0 0 0 2px rgba(242, 189, 18, 0.15);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: var(--gold-finger);
+    color: var(--lead);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--lead);
+    color: var(--pure-white);
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--lead);
+}
+
+@media (max-width: 450px) {
+    .auth-container {
+        width: 90%;
+        padding: 25px;
+    }
+}
